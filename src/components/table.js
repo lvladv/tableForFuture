@@ -40,7 +40,7 @@ const  Table =  props => {
         <tbody>
           {props.data.map(item => (
             <tr
-              key={item.phone}
+              key={item.phone+item.email}
               onClick={(()=>props.onRowInfo(item))}
             >
               <td>{item.id}</td>

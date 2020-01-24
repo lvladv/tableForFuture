@@ -1,11 +1,16 @@
-import React ,{createRef } from "react";
+import React, { createRef } from "react";
 
 const Search = props => {
- let searchVal = createRef();
+  let searchVal = createRef();
   return (
     <div>
       <input ref={searchVal} type="text" />
-      <button onClick={() => props.onSearch(searchVal.current.value)}>
+      <button
+        onClick={() => {
+          props.onSearch(searchVal.current.value);
+          searchVal.current.value = "";
+        }}
+      >
         Искать
       </button>
     </div>
