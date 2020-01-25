@@ -7,10 +7,10 @@ const Mode = props => {
 
   return (
     <div>
-      <button onClick={() => props.onMode(littleURL)}>
+      <button onClick={() => props.onMode(littleURL)} className="btn btn-outline-success btn-lg mt-5">
         Маленький объем данных
       </button>
-      <button onClick={() => props.onMode(bigURL)}>Большой объем данных</button>
+      <button onClick={() => props.onMode(bigURL)}  className="btn btn-outline-success btn-lg  ml-3 mt-5">Большой объем данных</button>
     </div>
   );
 };

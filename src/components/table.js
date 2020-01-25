@@ -2,36 +2,37 @@ import React from "react";
 
 const  Table =  props => {
     return (
+    
       <table className="table table-hover">
         <thead>
           <tr>
             <th>
               id{" "}
-              <span className="sort" onClick={()=> props.onSort("id")}>
+              <span className={(props.sort === "asc") ? "up" : "down"} onClick={()=> props.onSort("id")}>
                 {" "}
               </span>
             </th>
             <th>
               firstName
-              <span className="sort" onClick={()=> props.onSort("firstName")}>
+              <span className={(props.sort === "asc") ? "up" : "down"}onClick={()=> props.onSort("firstName")}>
                 {" "}
               </span>
             </th>
             <th>
               lastName
-              <span className="sort" onClick={()=> props.onSort("lastName")}>
+              <span className={(props.sort === "asc") ? "up" : "down"} onClick={()=> props.onSort("lastName")}>
                 {" "}
               </span>
             </th>
             <th>
               email
-              <span className="sort" onClick={()=> props.onSort("email")}>
+              <span className={(props.sort === "asc") ? "up" : "down"} onClick={()=> props.onSort("email")}>
                 {" "}
               </span>
             </th>
             <th>
               phone
-              <span className="sort" onClick={()=> props.onSort("phone")}>
+              <span className={(props.sort === "asc") ? "up" : "down"} onClick={()=> props.onSort("phone")}>
                 {" "}
               </span>
             </th>

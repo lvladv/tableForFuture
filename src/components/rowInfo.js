@@ -1,7 +1,7 @@
 import React from "react";
 
 const RowInfo = ({ row }) => (
-  <section>
+  <section className = 'alert alert-primary'>
     Выбран пользователь <b>{`${row.firstName} ${row.lastName}`}</b> <br />
     Описание:
     <br />
